@@ -1,7 +1,0 @@
--- Problem 40: Get all vehicles that has one of the Max 3 Engine CC
--- 12-9-2026
-select * from VehicleDetails where Engine_CC in
-(
-select distinct top 3 Engine_CC from VehicleDetails order by Engine_CC desc
-)
-;
